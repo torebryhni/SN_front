@@ -1,2 +1,2 @@
-# SN_front
+# TraineeJS
 Created with CodeSandbox

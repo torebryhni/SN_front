@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+}
+
+#topptekst {
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+  border: 3px solid rgb(135, 193, 226);
+  padding: 20px;
+}
+
+#resultat {
+  margin: auto;
+  padding: 20px 0;
+  width: 80%;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+
+  font: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: brown;
+}
+
+#knapp {
+  color: blue;
+  background-color: rosybrown;
+}

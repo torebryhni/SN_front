@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BlippBlopp Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="topptekst" class="center">
+      <h1>Lek med gangetabellen</h1>
+
+      Leken går ut på å telle oppover fra 1, men alle tall som kan deles på 3 og
+      5 byttes ut med ordene "Blipp" og "Blopp". Er tallet delelig på både 3 og
+      5, skal det byttes ut med "BlippBlopp"
+      <div class=""></div>
+      <br />Bruk knappene under for å telle opp en og en, eller skriv ut 50 på
+      en gang. <br /><br /><br />
+
+      Blipp: <input type="text" id="blipp" value="3" />
+      <br />
+      Blopp: <input type="text" id="blopp" value="5" /> <br /><br />
+      <button id="alle" onclick="allAtOnce()">50 på en gang</button>
+      <button id="enAvGangen" onclick="oneByOne()">En av gangen</button>
+      <button id="nullstill" onclick="cleanup()">Nullstill</button>
+      <br />
+    </div>
+    <div><br /></div>
+    <div id="resultat">
+      <div id="rightBlock"></div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
