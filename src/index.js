@@ -15,7 +15,6 @@ function httpGetRequest(url, callback) {
   http.open("GET", url);
   http.onload = function () {
     callback(null, http.response);
-    console.log(url);
   };
   http.onerror = function () {
     callback(http.response);
@@ -24,7 +23,7 @@ function httpGetRequest(url, callback) {
 }
 
 function httpGetRequestExample() {
-  const backend = "https://gbppc.sse.codesandbox.io/";
+  const backend = "https://rgpz1.sse.sse.codesandbox.io/";
   httpGetRequest(backend, function (err, data) {
     if (err) {
       throw err;
@@ -35,9 +34,29 @@ function httpGetRequestExample() {
 }
 
 window.allAtOnce = function () {
-  result.innerText = "50 på en gang";
+  // result.innerText = "50 på en gang";
+
+  const backend = "https://rgpz1.sse.codesandbox.io/api/numbers";
+  httpGetRequest(backend, function (err, data) {
+    if (err) {
+      throw err;
+    }
+
+    result.innerText = data;
+    console.log(data);
+  });
 };
 
 window.oneByOne = function () {
   result.innerText = "En av gangen";
+  // todo - få egen funksjon til å fungere.
+  const backend = "https://rgpz1.sse.codesandbox.io/api/fizz";
+  httpGetRequest(backend, function (err, data) {
+    if (err) {
+      throw err;
+    }
+
+    result.innerText = data;
+    console.log(data);
+  });
 };
